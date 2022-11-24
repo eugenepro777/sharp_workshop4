@@ -18,10 +18,18 @@ int[] FillArray(int length) // метод возвращающий целочи�
     return result;
 }
 
-void PrintArray(int[] arr)
+// void PrintArray(int[] arr)
+// {
+//     for(int i = 0; i < arr.Length; i++)
+//     {
+//         Console.Write($"{arr[i]}\t");
+//     }
+// }
+
+void PrintArray(int[] arr) // метод организован через foreach 
 {
-    for(int i = 0; i < arr.Length; i++)
+    foreach(int i in arr)
     {
-        Console.Write($"{arr[i]}\t");
+        Console.Write($"{arr[i]}\t");        
     }
 }
